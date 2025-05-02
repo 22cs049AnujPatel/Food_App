@@ -199,30 +199,7 @@ const MobileNavbar = () => {
               </>
             )}
           </SheetDescription>
-          <SheetFooter className="flex flex-col gap-4">
-            <div className="flex flex-row items-center gap-2">
-              <Avatar>
-                <AvatarImage src={user?.profilePicture} />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <h1 className="font-bold">Patel Mernstack</h1>
-            </div>
-            <SheetClose asChild>
-              {loading ? (
-                <Button className="bg-orange hover:bg-hoverOrange">
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Please wait
-                </Button>
-              ) : (
-                <Button
-                  onClick={logout}
-                  className="bg-orange hover:bg-hoverOrange"
-                >
-                  Logout
-                </Button>
-              )}
-            </SheetClose>
-          </SheetFooter>
+          
         </SheetContent>
       </Sheet>
     );
